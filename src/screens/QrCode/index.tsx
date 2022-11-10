@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Text, View } from "react-native";
 import { BarCodeScanner, BarCodeScannerResult } from "expo-barcode-scanner";
-
 import styles from "./styles";
 import { ButtonComp } from "../../components";
 
@@ -38,7 +37,7 @@ const QrCode = () => {
             </View>
             {scanned && (
                 <ButtonComp
-                    type="padrao"
+                    type="login"
                     title="Pressione para escanear novamente"
                     onPress={() => setScanned(false)}
                 />
